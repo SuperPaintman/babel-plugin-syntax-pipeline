@@ -13,6 +13,7 @@ before_install:
   # Instal deps
   - "npm install -g yarn@${YARN_VERSION}"
   - "yarn global add coveralls --no-progress"
+  - "yarn global add codeclimate-test-reporter --no-progress"
   - "(NODE_ENV=development && yarn install --ignore-scripts --no-progress)"
   - "yarn list"
 
@@ -27,6 +28,8 @@ script:
 after_script:
   # coveralls
   - "cat ./coverage/lcov.info | coveralls"
+  # codeclimate
+  - "cat ./coverage/lcov.info | codeclimate-test-reporter"
 
 branches:
   except:
