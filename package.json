@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src -d lib -s",
     "build:watch": "babel src -d lib -s -w",
-    "lint": "echo 'TODO add linter'",
+    "lint": "eslint src",
     "test": "mocha --opts ./mocha.opts ./lib/**/test.js",
     "test:watch": "mocha --opts ./mocha.opts --watch ./lib/**/test.js",
     "test-ci": "istanbul cover ./node_modules/mocha/bin/_mocha -- --opts ./mocha.opts ./lib/**/test.js",
@@ -37,9 +37,11 @@
   "devDependencies": {
     "babel-cli": "6.24.0",
     "babel-core": "6.24.0",
+    "babel-eslint": "7.1.1",
     "babel-preset-es2015": "6.24.0",
     "babel-preset-stage-0": "6.22.0",
     "chai": "3.5.0",
+    "eslint": "3.18.0",
     "husky": "0.13.2",
     "istanbul": "0.4.5",
     "mocha": "3.2.0",
