@@ -17,10 +17,9 @@ tt.pipeline = new TokenType('|>', { beforeExpr, binop: 12 });
 /** Parser */
 const pp = Parser.prototype;
 
-pp.readToken_pipeline = function readToken_pipeline(code) {
+pp.readToken_pipeline = function readToken_pipeline(code) { // eslint-disable-line camelcase
   return this.finishOp(tt.pipeline, 2);
 };
-
 
 
 /** Plugin */
@@ -46,4 +45,4 @@ export default function () {
       parserOpts.plugins.push(PLUGIN_NAME);
     }
   };
-};
+}

@@ -1,4 +1,5 @@
 'use strict';
+/* global it, describe */
 /** Imports */
 import './helper';
 
@@ -11,7 +12,7 @@ import { transform }  from 'babel-core';
 
 /** Constants */
 const babelOptions = {
-  plugins: [path.join(__dirname, '../index.js')],
+  plugins: [path.join(__dirname, '../index.js')]
 };
 
 
