@@ -2,6 +2,7 @@
 
 [![Build][travis-image]][travis-url]
 [![Test Coverage][coveralls-image]][coveralls-url]
+[![Code Climate][codeclimate-image]][codeclimate-url]
 
 
 > Allow parsing of pipeline operator `|>`
@@ -106,4 +107,6 @@ npm run test
 [travis-url]: https://travis-ci.org/SuperPaintman/babel-plugin-syntax-pipeline
 [coveralls-image]: https://img.shields.io/coveralls/SuperPaintman/babel-plugin-syntax-pipeline/master.svg
 [coveralls-url]: https://coveralls.io/r/SuperPaintman/babel-plugin-syntax-pipeline?branch=master
+[codeclimate-image]: https://img.shields.io/codeclimate/github/SuperPaintman/babel-plugin-syntax-pipeline.svg
+[codeclimate-url]: https://codeclimate.com/github/SuperPaintman/babel-plugin-syntax-pipeline
 [proposal-url]: https://github.com/mindeavor/es-pipeline-operator
